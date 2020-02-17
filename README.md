@@ -1,3 +1,9 @@
+# NetFly-beta test
+
+Testing CI from local env to NetFly (https://netfly-beta-test.netlify.com/)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
