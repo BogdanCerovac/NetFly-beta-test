@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import './LazyLoadedInput.scss';
 
 import UserContext from '../contexts/UserContext';
@@ -6,8 +6,7 @@ import UserContext from '../contexts/UserContext';
 
 const LazyLoadedInput = () => {
 
-    const contextValue = useContext(UserContext.Consumer);
-    console.log("LazyLoadedHooked contextValue", contextValue);
+    console.log("LazyLoadedInput rendered");
 
     return(
         <UserContext.Consumer>

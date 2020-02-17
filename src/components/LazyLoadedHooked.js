@@ -6,8 +6,9 @@ import UserContext from '../contexts/UserContext';
 
 const LazyLoadedHooked =  ({props}) => {
 
-    const contextValue = useContext(UserContext.Consumer);
-    console.log("LazyLoadedHooked contextValue", contextValue);
+    const contextValue = useContext(UserContext);
+    // console.log("LazyLoadedHooked contextValue", contextValue);
+    console.log("LazyLoadedHooked rendered");
 
     const defaultLocal = 0;
 

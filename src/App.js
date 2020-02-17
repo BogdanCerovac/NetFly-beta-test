@@ -27,7 +27,8 @@ function App() {
     counterStartInt, setCounterStartInt,
   }), [user, counterStartInt]);
 
-
+  console.log("App rendered");
+  
   return (
     <UserContext.Provider value={providerValue}>
       <div className="App">

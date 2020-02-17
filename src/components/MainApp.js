@@ -6,7 +6,8 @@ const LazyLoadedHooked = React.lazy(() => import(/* webpackChunkName: "LazyLoade
 const LazyLoadedInput = React.lazy(() => import(/* webpackChunkName: "LazyLoadedInput" */ './LazyLoadedInput'));
 
 const MainApp = ({props}) => {
-    //const user = useContext(UserContext);
+    console.log("MainApp rendered");
+
     return(
         <div className="main-app">
             <h2>Main, lazy loading children;</h2>

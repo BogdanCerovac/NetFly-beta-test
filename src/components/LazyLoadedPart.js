@@ -2,12 +2,14 @@ import React from 'react';
 
 import './LazyLoadedPart.scss';
 
-import UserConsumer from '../contexts/UserContext';
+import UserContext from '../contexts/UserContext';
 
 const LazyLoadedPart = () => {
+
+    console.log("LazyLoadedPart rendered");
     
     return(
-        <UserConsumer>
+        <UserContext.Consumer>
         {props => {
           return (
             <div className="LazyLoadedPart">
@@ -17,7 +19,7 @@ const LazyLoadedPart = () => {
             </div>
           )
         }}
-      </UserConsumer>
+      </UserContext.Consumer>
     );
 
 };
