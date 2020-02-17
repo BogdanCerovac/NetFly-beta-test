@@ -19,9 +19,7 @@ const handleClick = () => {
 
 function App() {
 
-  const user = { name: 'Bogdan', loggedIn: true }
-
-  
+  const user = { name: 'Bogdan', counterStartInt: 100 }
 
   return (
     <UserProvider value={user}>

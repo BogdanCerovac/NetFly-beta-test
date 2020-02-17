@@ -2,9 +2,9 @@ import React from 'react';
 
 import './LazyLoadedPart.css';
 
-import { UserConsumer } from '../contexts/UserContext';
+import UserConsumer from '../contexts/UserContext';
 
-const LazyLoadedPart = ({props}) => {
+const LazyLoadedPart = () => {
     
     return(
         <UserConsumer>
