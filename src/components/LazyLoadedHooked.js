@@ -1,6 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react';
 
-import './LazyLoadedHooked.css';
+import './LazyLoadedHooked.scss';
 
 import UserContext from '../contexts/UserContext';
 

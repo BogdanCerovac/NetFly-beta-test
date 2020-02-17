@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import './LazyLoadedInput.css';
+import './LazyLoadedInput.scss';
 
 import UserContext from '../contexts/UserContext';
 

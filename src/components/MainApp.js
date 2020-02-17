@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import './MainApp.css';
+import './MainApp.scss';
 
 const LazyLoadedPart = React.lazy(() => import(/* webpackChunkName: "LazyLoadedPart" */ './LazyLoadedPart'));
 const LazyLoadedHooked = React.lazy(() => import(/* webpackChunkName: "LazyLoadedHooked" */ './LazyLoadedHooked'));

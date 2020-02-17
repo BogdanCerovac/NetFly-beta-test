@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './LazyLoadedPart.css';
+import './LazyLoadedPart.scss';
 
 import UserConsumer from '../contexts/UserContext';
 
