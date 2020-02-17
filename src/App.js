@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
-import { UserProvider } from './contexts/UserContext';
+import UserContext from './contexts/UserContext';
 
 import MainApp from './components/MainApp';
 
@@ -19,14 +19,22 @@ const handleClick = () => {
 
 function App() {
 
-  const user = { name: 'Bogdan', counterStartInt: 100 }
+  const [user, setUser] = useState("Mate");
+  const [counterStartInt, setCounterStartInt] = useState(100);
+
+  const providerValue = React.useMemo(() => ({
+    user, setUser,
+    counterStartInt, setCounterStartInt,
+  }), [user, counterStartInt]);
+
 
   return (
-    <UserProvider value={user}>
+    <UserContext.Provider value={providerValue}>
       <div className="App">
           <header className="App-header">
-            <h1>{user.name}, hello from React <span role="img" aria-label="Smiley">😁</span></h1>
-            <span role="img" aria-label="React icon" style={{fontSize: 80, color: "#0ea3d4"}}>⚛</span>
+            <h1>{user}, hello from React <span role="img" aria-label="Smiley">😁</span></h1>
+            <span role="img" aria-label="React icon" style={{fontSize: 50, color: "#0ea3d4", lineHeight: 1}}>⚛</span>
+            <small>Testing CI with GitHub and NetFly and learning a bit of React Hooks and Context APIs</small>
           </header>
 
           <main className="App-main">
@@ -43,7 +51,7 @@ function App() {
             <small>Yo, this is just a test, dude <span role="img" aria-label="Smiley">😁</span></small>
           </footer>
       </div>
-    </UserProvider>
+    </UserContext.Provider>
   );
 }
 

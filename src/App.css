@@ -1,6 +1,7 @@
 body,html,
 #root{
   height:100%;
+  font-size:16px;
 }
 
 .App {
@@ -15,17 +16,18 @@ body,html,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1rem;
   color: white;
+  padding:5px 0;
 }
 
 .App-header h1{
-  margin:10px 0;
+  margin: 0;
 }
 
 .App-main{
-  padding:20px 0;
-  margin:20px 0;
+  padding:0;
+  margin:0;
 }
 
 .App-footer{

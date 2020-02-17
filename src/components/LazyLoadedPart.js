@@ -9,7 +9,13 @@ const LazyLoadedPart = () => {
     return(
         <UserConsumer>
         {props => {
-          return <div className="LazyLoadedPart"><h2>LazyLoadedPart, prop from context: {props.name}</h2></div>
+          return (
+            <div className="LazyLoadedPart">
+              <h2>Just showing the context values</h2>
+              <p>LazyLoadedPart, user from context: {props.user}</p>
+              <p>LazyLoadedPart, counterStartInt from context: {props.counterStartInt}</p>
+            </div>
+          )
         }}
       </UserConsumer>
     );
